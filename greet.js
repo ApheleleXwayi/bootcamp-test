@@ -20,7 +20,7 @@ function isFromCapeTown(input){
   }
   console.log(isFromCapeTown("CA 123 908"))
 
-  3//  countRegNumber
+  4//  countRegNumber
    function countRegNumber(regNo){
     var array = regNo.split(',');
      return array.length;
@@ -53,7 +53,7 @@ function isFromCapeTown(input){
    console.log((new Date().getFullYear() - 2000), yearsAgo(2000));
    console.log((new Date().getFullYear() - 1976), yearsAgo(1976))
   //  7countAllPaarl
-  function countAllPaarl(values){
+  function allPaarl(values){
 var myArray = []
 var regList = values.split(", ")
 
@@ -86,7 +86,7 @@ myArray.push(eachReg)
 
  function  transportFee(shifts){
  
-  if(shifts === "morning" ){
+  if(shifts === "mornning" ){
   
     return "R" + 20
     }
@@ -101,13 +101,15 @@ myArray.push(eachReg)
   }
   
   
-// totalPhoneBill
+//9totalPhoneBill
 function totalPhoneBill(call,sms){
   var totalPhoneBill = call * 2 +  sms * 3
     return totalPhoneBill
   }
   console.log('R7.45', totalPhoneBill('call, sms, call, sms, sms'));
-// fromWhere
+// 10fromWhere
+
+
 // findItemsOver20
 // findItemsOver
 // mostProfitableDepartment

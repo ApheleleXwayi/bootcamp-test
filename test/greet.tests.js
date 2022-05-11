@@ -65,31 +65,56 @@ it('it should return "false"  if weekday starts with "S"' , function(){
 });
 // 6yearsAgo 
 describe('testing yearsAgo function' , function(){
-    it('should return "22" when its caltculate yearAgo from 2000 till the current year 2022' , function(){
-        assert.equal((new Date().getFullYear() - 2000))
+    it('should return "yearsAgo " when its caltculate  yearsAgo 1946', function(){
+       
 
     });
-    it('should return "46" when its caltculate yearsago from 1970' , function(){
-        assert.equal((new Date).getFullYear() - 2000), yearsAgo(2000);
+    it('should return "yearsAgo " when its caltculate  yearsAgo from 2000' , function(){
+        
     });
    
 });
 //  7countAllPaarl
-
-    describe('testing  the countAllPaarl function' , function(){
-        it('it should return all registration starts with "CJ" ', function(){
-            assert.equal( true,(countAllPaar('CJ 123'))) ;
+describe('testing  countAllPaarl function' , function(){
+    it('Its should  caltulate the total number of  registration that are fromPaal that starts  "CJ"' , function(){
+    });
+        it('Its should  caltulate the total number of  registration that are fromPaal that starts  "CJ"' , function(){
+            // assert.equal(2,countAllPaarl("678 543","CJ 67890"));
+            assert.equal (2, regNumbersForPaarl.length,("678 543","CJ 67890"));
         });
 });
 // 8transportFee
 describe('testing the  transportFee function' , function(){
-    it('it should return R20', function(){
-        assert.equal (R20,(shifts === "morning"));
+    it('its should return R20 the transportFee  when its in the "morning"' ,function(){
+        assert.equal(transportFee('morning'));
+
+    });
+   
+    it('its should return R10 the transportFee  when its in the "afternoon"' ,function(){
+        // assert.equal(transportFee('afternoon'));
+        assert.equal(transportFee('afternoon'), 'R10');
+    });
+
+   
+    it('its should return free  transportFee  when its in the "nightshift"' ,function(){
+        assert.equal(transportFee('nightshift'), 'free');
+
     });
 });
-// 9totalPhoneBill
-describe('testing totalPhoneBill function' , function(){
-    it('it should be able to calculate tatal price of 2 call ' ,function(){
-        assert.equal('R5.5', totalPhoneBill('2.75,2.75,')); 
-    });
+
+// 9 totalPhoneBill
+
+ describe('testing totalPhoneBill function' , function(){
+     it('it should return R7.45 when  calculate tatal price of 2 calls + 3 sms ' ,function(){
+        // assert.equal('R7.45', totalPhoneBill('call, sms, call, sms, sms'));
+        
+});
+        it('it should return R3.40 calculate tatal price of call and sms' ,function(){   
+            // assert.equal('R3.40', totalPhoneBill('call, sms'));
+});
+    
+    it('it should return  when calculate tatal price 2 sms' ,function(){   
+    // assert.equal('R1.30', totalPhoneBill('sms, sms'));
+
+});
 });
